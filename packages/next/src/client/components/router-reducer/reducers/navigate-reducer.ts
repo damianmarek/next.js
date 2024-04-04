@@ -176,7 +176,7 @@ function navigateReducer_noPPR(
           flightSegmentPathWithLeadingEmpty,
           currentTree,
           treePatch,
-          url.pathname
+          href
         )
 
         // If the tree patch can't be applied to the current tree then we use the tree at time of prefetch
@@ -187,7 +187,7 @@ function navigateReducer_noPPR(
             flightSegmentPathWithLeadingEmpty,
             treeAtTimeOfPrefetch,
             treePatch,
-            url.pathname
+            href
           )
         }
 
