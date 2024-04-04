@@ -1360,7 +1360,7 @@ export async function buildAppStaticPaths({
   return StaticGenerationAsyncStorageWrapper.wrap(
     ComponentMod.staticGenerationAsyncStorage,
     {
-      urlPathname: page,
+      url: { pathname: page },
       renderOpts: {
         originalPathname: page,
         incrementalCache,
